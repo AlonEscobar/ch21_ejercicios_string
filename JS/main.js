@@ -26,3 +26,25 @@ function invertirCadena(cad) {
     return nuevaCadena; 
 }
 console.log(`De la cadena: ${caden} \nSe invirtio a: ${invertirCadena(caden)}`)
+
+let palindromo="anita lava la tina";
+console.log(`El string: ${palindromo} `);
+palindromo=palindromo.toLowerCase().replaceAll(" ","")
+
+function espalindromo(str)
+{
+str=str.toLowerCase();
+str=str.replaceAll(" ","");
+if(invertirCadena(str)==str)  
+return true;
+
+
+return false;
+}
+
+if (palindromo==invertirCadena(palindromo)) {
+   console.log(`¿es una cadena? ${true}`);
+}
+else{
+console.log(`¿es una cadena? ${false}`);
+}
